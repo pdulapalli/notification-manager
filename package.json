@@ -1,5 +1,5 @@
 {
-  "name": "notification-service",
+  "name": "notification-manager",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -13,12 +13,14 @@
   "dependencies": {
     "dotenv": "10.0.0",
     "koa": "2.13.3",
-    "koa-joi-router": "8.0.0"
+    "koa-joi-router": "8.0.0",
+    "pg": "8.7.1",
   },
   "devDependencies": {
     "@types/koa": "2.13.4",
     "@types/koa-joi-router": "8.0.2",
     "@types/node": "16.9.6",
+    "@types/pg": "8.6.1",
     "@typescript-eslint/eslint-plugin": "4.31.2",
     "@typescript-eslint/parser": "4.31.2",
     "eslint": "7.32.0",
