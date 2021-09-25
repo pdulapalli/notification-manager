@@ -6,7 +6,7 @@
   "author": "Anurag Dulapalli",
   "license": "UNLICENSED",
   "scripts": {
-    "lint": "eslint \"src/**/*.ts\" --fix",
+    "lint": "eslint \"src/**/*.ts\"",
     "build": "tsc",
     "watch": "ts-node-dev --respawn src/app.ts"
   },
