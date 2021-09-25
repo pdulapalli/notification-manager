@@ -1,5 +1,5 @@
-import Koa from 'koa';
-import healthModule from './modules/health/health.module';
+import Koa from "koa";
+import healthModule from "./modules/health/health.module";
 
 const app = new Koa();
 
@@ -7,7 +7,7 @@ const app = new Koa();
 app.use(healthModule);
 
 function onStart() {
-  console.log('Service started...');
+  console.log("Service started...");
 }
 
 const serverPort = process.env.SERVER_PORT || 3000;
