@@ -1,11 +1,14 @@
 import Koa from 'koa';
-import healthController from './controllers/health/health.controller';
+import healthModule from './modules/health/health.module';
 
 const app = new Koa();
 
 // Initialize controllers and routes
-app.use(healthController.middleware());
+app.use(healthModule);
 
-app.listen(process.env.SERVER_PORT, () => {
+function onStart() {
   console.log('Service started...');
-});
+}
+
+const serverPort = process.env.SERVER_PORT || 3000;
+app.listen(serverPort, onStart);
