@@ -11,6 +11,7 @@
     "watch": "ts-node-dev --respawn src/app.ts"
   },
   "dependencies": {
+    "dotenv": "10.0.0",
     "koa": "2.13.3",
     "koa-joi-router": "8.0.0"
   },

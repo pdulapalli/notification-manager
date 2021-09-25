@@ -1,4 +1,7 @@
 import Koa from "koa";
+import dotenv from "dotenv";
+dotenv.config();
+
 import healthModule from "./modules/health/health.module";
 
 const app = new Koa();
