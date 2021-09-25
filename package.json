@@ -1,0 +1,23 @@
+{
+  "name": "notification-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Anurag Dulapalli",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "watch": "ts-node-dev --respawn src/app.ts"
+  },
+  "dependencies": {
+    "koa": "2.13.3",
+    "koa-joi-router": "8.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "2.13.4",
+    "@types/koa-joi-router": "8.0.2",
+    "@types/node": "16.9.6",
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.4.3"
+  }
+}
