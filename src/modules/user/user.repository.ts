@@ -30,4 +30,19 @@ async function getUserRecord(userId: string): Promise<User> {
   return parseUserFromRecord(record);
 }
 
-export { getUserRecord, createUserRecord };
+async function updateUserRecord(user: User): Promise<User> {
+  const result = await dbConnPool.query({
+    text: "UPDATE users SET email = $2, phone = $3, contact_preference = $4 WHERE user_id = $1",
+    values: [user.userId, user.email, user.phone, user.contactPreference],
+  });
+
+  if (result.rowCount === 0) {
+    return null;
+  }
+  // FIXME:
+  console.log(result)
+
+  return user;
+}
+
+export { createUserRecord, getUserRecord, updateUserRecord };
