@@ -4,12 +4,14 @@ dotenv.config();
 
 import errorMiddleware from "./middleware/error.middleware";
 import healthModule from "./modules/health/health.module";
+import userModule from "./modules/user/user.module";
 
 const app = new Koa();
 
 // Initialize controllers and routes
 app.use(errorMiddleware());
 app.use(healthModule);
+app.use(userModule);
 function onStart() {
   console.log("Service started...");
 }
