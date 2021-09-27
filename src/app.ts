@@ -5,6 +5,7 @@ dotenv.config();
 import errorMiddleware from "./middleware/error.middleware";
 import healthModule from "./modules/health/health.module";
 import userModule from "./modules/user/user.module";
+import notificationModule from "./modules/notification/notification.module";
 
 const app = new Koa();
 
@@ -12,6 +13,8 @@ const app = new Koa();
 app.use(errorMiddleware());
 app.use(healthModule);
 app.use(userModule);
+app.use(notificationModule);
+
 function onStart() {
   console.log("Service started...");
 }

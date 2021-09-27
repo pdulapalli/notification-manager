@@ -12,4 +12,14 @@ function parseUserFromRecord(record: UserRecord): User {
   };
 }
 
-export { parseUserFromRecord };
+function parseNotificationFromRecord(record: NotificationRecord): Notification {
+  return {
+    notificationId: record.notification_id,
+    title: record.title.trim(),
+    textContent: record.text_content.trim(),
+    noteTime: record.note_time,
+    userId: record.user_id,
+  };
+}
+
+export { parseNotificationFromRecord, parseUserFromRecord };
