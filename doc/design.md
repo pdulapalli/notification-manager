@@ -15,7 +15,7 @@ service logic.
 
 ### Endpoints
 
-See the [example requests](./api.md) for further info.
+See the [example requests](./api/api.md) for further info.
 
 #### User
 
