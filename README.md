@@ -1,5 +1,7 @@
 # notification-manager
 
+Creates and delivers notifications via different modes of communication
+
 ## Design
 
 Please refer to [design approach here](doc/design.md).
